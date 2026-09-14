@@ -1,0 +1,508 @@
+<!doctype html>
+<html lang="hr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ECOTERM – Grijanje, hlađenje i dizalice topline</title>
+  <meta name="description" content="ECOTERM – instalacije za Vaš dom. Dizalice topline, centralne klime, klima uređaji, centralno i podno grijanje. Montaža, puštanje u rad i servis.">
+  <meta property="og:title" content="ECOTERM – Instalacije za Vaš dom">
+  <meta property="og:description" content="Grijanje, hlađenje, dizalice topline i centralne klime.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#16202e">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- ?v= povećaj nakon svake izmjene CSS/JS da preglednici ne koriste staru verziju -->
+  <link rel="stylesheet" href="css/style.css?v=3">
+</head>
+<body>
+
+<header class="site-header" id="top">
+  <div class="wrap header-inner">
+    <a href="#top" class="brand" aria-label="ECOTERM – početna">
+      <img src="assets/logo-mark.svg" alt="" width="44" height="40">
+      <span class="brand-text"><span class="eco">ECO</span><span class="term">TERM</span></span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Glavna navigacija">
+      <a href="#usluge">Usluge</a>
+      <a href="#radovi">Radovi</a>
+      <a href="#dizalice">Dizalice topline</a>
+      <a href="#proces">Kako radimo</a>
+      <a href="#pitanja">Pitanja</a>
+      <a href="#kontakt">Kontakt</a>
+      <a href="#kontakt" class="btn btn-sm btn-red nav-cta">Zatraži ponudu</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Izbornik" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero" data-mode="heat">
+    <div class="hero-bg" aria-hidden="true">
+      <div class="glow glow-heat"></div>
+      <div class="glow glow-cool"></div>
+      <svg class="pipes" viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid slice">
+        <g fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M-20 470 H300 Q340 470 340 430 V260 Q340 220 380 220 H720"/>
+          <path d="M-20 500 H320 Q370 500 370 450 V290 Q370 250 410 250 H760"/>
+          <path d="M1220 120 H980 Q940 120 940 160 V380 Q940 420 900 420 H640"/>
+          <path d="M1220 150 H1000 Q970 150 970 180 V400 Q970 450 920 450 H660"/>
+          <circle cx="340" cy="340" r="14"/><circle cx="940" cy="270" r="14"/>
+        </g>
+      </svg>
+    </div>
+
+    <div class="wrap hero-inner">
+      <div class="hero-copy">
+        <p class="kicker"><span class="dot"></span> Instalacije za Vaš dom</p>
+        <h1>
+          <span class="h1-heat">Toplo zimi.</span>
+          <span class="h1-cool">Svježe ljeti.</span>
+          <span class="h1-rest">Niži računi cijelu godinu.</span>
+        </h1>
+        <p class="lead">Projektiramo, ugrađujemo i servisiramo sustave grijanja i hlađenja – od dizalica topline i centralnih klima do podnog grijanja. Jedan izvođač, od prve procjene do puštanja u rad.</p>
+        <div class="hero-actions">
+          <a href="#kontakt" class="btn btn-red">Zatraži besplatnu procjenu</a>
+          <a href="#" class="btn btn-ghost" data-cfg="tel-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>
+            <span data-cfg="tel">Nazovite nas</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="thermo-card" aria-label="Prikaz načina rada">
+        <div class="mode-switch" role="tablist">
+          <button role="tab" class="mode-btn is-active" data-set-mode="heat" aria-selected="true">🔥 Grijanje</button>
+          <button role="tab" class="mode-btn" data-set-mode="cool" aria-selected="false">❄️ Hlađenje</button>
+        </div>
+        <div class="dial">
+          <svg viewBox="0 0 220 220" aria-hidden="true">
+            <defs>
+              <linearGradient id="gHeat" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#f6a13a"/><stop offset="1" stop-color="#e0383b"/></linearGradient>
+              <linearGradient id="gCool" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#5fd4f0"/><stop offset="1" stop-color="#2b5fc4"/></linearGradient>
+            </defs>
+            <circle cx="110" cy="110" r="88" class="dial-track"/>
+            <circle cx="110" cy="110" r="88" class="dial-arc" pathLength="100"/>
+            <g class="ticks"></g>
+          </svg>
+          <div class="dial-readout">
+            <span class="dial-temp" id="dialTemp">22</span><span class="dial-unit">°C</span>
+            <span class="dial-label" id="dialLabel">ugodno grijanje</span>
+          </div>
+        </div>
+        <ul class="thermo-facts">
+          <li><strong>Jedan uređaj</strong><span>grije, hladi i priprema toplu vodu</span></li>
+          <li><strong>Tiho i čisto</strong><span>bez dimnjaka i skladištenja goriva</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="wrap">
+      <ul class="trust">
+        <li><span class="ico">✓</span> Procjena i savjet na terenu</li>
+        <li><span class="ico">✓</span> Ugradnja i puštanje u rad</li>
+        <li><span class="ico">✓</span> Redovni servis i održavanje</li>
+        <li><span class="ico">✓</span> Pomoć oko natječaja za subvencije</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- USLUGE -->
+  <section class="section" id="usluge">
+    <div class="wrap">
+      <header class="section-head">
+        <p class="eyebrow">Usluge</p>
+        <h2>Sve za ugodnu temperaturu u domu</h2>
+        <p>Od obiteljske kuće do poslovnog prostora – odaberemo sustav koji odgovara vašem objektu, navikama i budžetu.</p>
+      </header>
+
+      <div class="cards">
+        <article class="card card-feature reveal">
+          <div class="card-ico ico-green">
+            <svg viewBox="0 0 48 48"><rect x="6" y="12" width="36" height="26" rx="4"/><circle cx="18" cy="25" r="7"/><path d="M18 18v14M11 25h14M13 20l10 10M23 20 13 30"/><path d="M30 19h8M30 25h8M30 31h8"/></svg>
+          </div>
+          <span class="tag">Najtraženije</span>
+          <h3>Dizalice topline</h3>
+          <p>Sustavi zrak-voda i zemlja-voda za grijanje, hlađenje i pripremu potrošne tople vode. Najisplativija zamjena za plin, lož-ulje i struju.</p>
+          <a href="#dizalice" class="card-link">Kako rade →</a>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-ico ico-blue">
+            <svg viewBox="0 0 48 48"><rect x="5" y="10" width="38" height="14" rx="3"/><path d="M10 19h28"/><path d="M14 30c0 4-3 4-3 8M24 30c0 4-3 4-3 8M34 30c0 4-3 4-3 8"/></svg>
+          </div>
+          <h3>Centralne klime</h3>
+          <p>VRF/VRV i kanalni sustavi – jedna vanjska jedinica, više prostorija. Diskretni unutarnji uređaji i zasebna regulacija po zonama.</p>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-ico ico-blue">
+            <svg viewBox="0 0 48 48"><rect x="5" y="12" width="38" height="16" rx="4"/><path d="M11 23h26"/><path d="M24 4v4M24 32v12M18 38l6 4 6-4M18 34l6 4 6-4"/></svg>
+          </div>
+          <h3>Klima uređaji</h3>
+          <p>Split i multi-split inverter uređaji za stanove i urede. Pravilna dimenzija, uredna montaža i tihi rad.</p>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-ico ico-red">
+            <svg viewBox="0 0 48 48"><rect x="6" y="14" width="36" height="24" rx="3"/><path d="M13 14v24M20 14v24M27 14v24M34 14v24"/><path d="M18 8c0-3 3-3 3-6M26 8c0-3 3-3 3-6"/></svg>
+          </div>
+          <h3>Centralno grijanje</h3>
+          <p>Kotlovnice, radijatori, razdjelnici i cijevni razvod. Modernizacija postojećih sustava i spajanje na dizalicu topline.</p>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-ico ico-red">
+            <svg viewBox="0 0 48 48"><path d="M4 38h40"/><path d="M8 32h32c3 0 3-5 0-5H12c-3 0-3-5 0-5h24c3 0 3-5 0-5H12"/><path d="M8 10l4 4 4-4"/></svg>
+          </div>
+          <h3>Podno i zidno grijanje</h3>
+          <p>Niskotemperaturno grijanje ravnomjerno raspoređene topline – idealan partner dizalici topline i najveća ušteda.</p>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-ico ico-green">
+            <svg viewBox="0 0 48 48"><path d="M30 6a10 10 0 0 0-9 14L6 35a4 4 0 0 0 6 6l15-15a10 10 0 0 0 14-9l-6 6-6-2-2-6 6-6a10 10 0 0 0-3-3z"/></svg>
+          </div>
+          <h3>Servis i održavanje</h3>
+          <p>Redovni godišnji servisi, čišćenje i dezinfekcija klima, provjera tlaka i parametara, otklanjanje kvarova.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- RADOVI -->
+  <section class="section section-soft" id="radovi">
+    <div class="wrap">
+      <header class="section-head section-head-row">
+        <div>
+          <p class="eyebrow">Naši radovi</p>
+          <h2>Ugrađeno, spojeno, pušteno u rad</h2>
+          <p>Dio instalacija koje smo izveli – od vanjskih jedinica dizalica topline do urednih kotlovnica.</p>
+        </div>
+        <div class="filters" role="group" aria-label="Filtriraj radove">
+          <button class="filter is-active" data-filter="sve">Sve</button>
+          <button class="filter" data-filter="dizalice">Dizalice topline</button>
+          <button class="filter" data-filter="kotlovnice">Kotlovnice i grijanje</button>
+          <button class="filter" data-filter="klima">Klimatizacija</button>
+          <button class="filter" data-filter="voda">Vodoinstalacije</button>
+        </div>
+      </header>
+
+      <ul class="gallery">
+        <li class="g-item g-big" data-cat="dizalice">
+          <button class="g-btn" data-full="assets/radovi/rad-13.jpg">
+            <img src="assets/radovi/rad-13-mali.jpg" alt="Vanjska jedinica dizalice topline ugrađena uz postojeću kuću" loading="lazy" width="700" height="700">
+            <span class="g-cap"><strong>Retrofit dizalice topline</strong><small>Zamjena starog grijanja u postojećoj kući</small></span>
+          </button>
+        </li>
+        <li class="g-item" data-cat="dizalice">
+          <button class="g-btn" data-full="assets/radovi/rad-03.jpg">
+            <img src="assets/radovi/rad-03-mali.jpg" alt="LG Therma V dizalica topline na betonskom postolju" loading="lazy" width="590" height="590">
+            <span class="g-cap"><strong>LG Therma V</strong><small>Dizalica topline zrak-voda</small></span>
+          </button>
+        </li>
+        <li class="g-item" data-cat="kotlovnice">
+          <button class="g-btn" data-full="assets/radovi/rad-11.jpg">
+            <img src="assets/radovi/rad-11-mali.jpg" alt="Viessmann kondenzacijski kotao s bojlerom i ekspanzijskom posudom" loading="lazy" width="700" height="700">
+            <span class="g-cap"><strong>Viessmann kotao</strong><small>Kotao, bojler i ekspanzijska posuda</small></span>
+          </button>
+        </li>
+        <li class="g-item" data-cat="kotlovnice">
+          <button class="g-btn" data-full="assets/radovi/rad-07.jpg">
+            <img src="assets/radovi/rad-07-mali.jpg" alt="Hidraulički moduli grijaćih krugova i razdjelnik u kotlovnici" loading="lazy" width="590" height="590">
+            <span class="g-cap"><strong>Kotlovnica</strong><small>Moduli grijaćih krugova i razdjelnik</small></span>
+          </button>
+        </li>
+        <li class="g-item" data-cat="dizalice">
+          <button class="g-btn" data-full="assets/radovi/rad-05.jpg">
+            <img src="assets/radovi/rad-05-mali.jpg" alt="Kaisai monoblok dizalica topline uz obiteljsku kuću" loading="lazy" width="590" height="590">
+            <span class="g-cap"><strong>Kaisai monoblok</strong><small>Dizalica topline, radna tvar R32</small></span>
+          </button>
+        </li>
+        <li class="g-item" data-cat="klima">
+          <button class="g-btn" data-full="assets/radovi/rad-01.jpg">
+            <img src="assets/radovi/rad-01-mali.jpg" alt="Zidni klima uređaj na drvenoj akustičnoj oblozi" loading="lazy" width="526" height="526">
+            <span class="g-cap"><strong>Klima uređaj</strong><small>Montaža u poslovnom prostoru</small></span>
+          </button>
+        </li>
+        <li class="g-item" data-cat="dizalice">
+          <button class="g-btn" data-full="assets/radovi/rad-09.jpg">
+            <img src="assets/radovi/rad-09-mali.jpg" alt="Dizalica topline za pripremu potrošne tople vode uz akumulacijski spremnik" loading="lazy" width="526" height="699">
+            <span class="g-cap"><strong>Topla voda</strong><small>Sanitarna dizalica topline</small></span>
+          </button>
+        </li>
+        <li class="g-item" data-cat="kotlovnice">
+          <button class="g-btn" data-full="assets/radovi/rad-04.jpg">
+            <img src="assets/radovi/rad-04-mali.jpg" alt="Razdjelnici podnog grijanja i spremnik tople vode" loading="lazy" width="590" height="590">
+            <span class="g-cap"><strong>Podno grijanje</strong><small>Razdjelnici i spremnik PTV-a</small></span>
+          </button>
+        </li>
+        <li class="g-item" data-cat="dizalice">
+          <button class="g-btn" data-full="assets/radovi/rad-06.jpg">
+            <img src="assets/radovi/rad-06-mali.jpg" alt="Antracit vanjska jedinica dizalice topline na čeličnom postolju" loading="lazy" width="590" height="590">
+            <span class="g-cap"><strong>Dizalica topline</strong><small>Vanjska jedinica na postolju</small></span>
+          </button>
+        </li>
+        <li class="g-item" data-cat="kotlovnice">
+          <button class="g-btn" data-full="assets/radovi/rad-02.jpg">
+            <img src="assets/radovi/rad-02-mali.jpg" alt="Obnovljena kotlovnica s cirkulacijskim crpkama i manometrima" loading="lazy" width="590" height="590">
+            <span class="g-cap"><strong>Obnova kotlovnice</strong><small>Crpke, razdjelnik i cijevni razvod</small></span>
+          </button>
+        </li>
+        <li class="g-item" data-cat="kotlovnice">
+          <button class="g-btn" data-full="assets/radovi/rad-12.jpg">
+            <img src="assets/radovi/rad-12-mali.jpg" alt="Izolirani cijevni spojevi ispod Viessmann kotla" loading="lazy" width="700" height="700">
+            <span class="g-cap"><strong>Izolirani razvod</strong><small>Uredno spojena i izolirana kotlovnica</small></span>
+          </button>
+        </li>
+        <li class="g-item" data-cat="voda">
+          <button class="g-btn" data-full="assets/radovi/rad-08.jpg">
+            <img src="assets/radovi/rad-08-mali.jpg" alt="Trostupanjski filtri vode s obilaznim vodom" loading="lazy" width="590" height="590">
+            <span class="g-cap"><strong>Filtracija vode</strong><small>Filtri s obilaznim vodom</small></span>
+          </button>
+        </li>
+        <li class="g-item" data-cat="voda">
+          <button class="g-btn" data-full="assets/radovi/rad-10.jpg">
+            <img src="assets/radovi/rad-10-mali.jpg" alt="Linijski odvod tuša postavljen laserskim nivelirom" loading="lazy" width="526" height="526">
+            <span class="g-cap"><strong>Odvod tuša</strong><small>Precizno postavljen linijski odvod</small></span>
+          </button>
+        </li>
+      </ul>
+
+      <p class="gallery-more">
+        Više radova na Instagramu –
+        <a href="#" data-cfg="instagram-link" target="_blank" rel="noopener">@ecoterm.hr</a>
+      </p>
+    </div>
+  </section>
+
+  <dialog class="lightbox" id="lightbox" aria-label="Pregled slike">
+    <button class="lb-close" data-lb="close" aria-label="Zatvori">×</button>
+    <button class="lb-nav lb-prev" data-lb="prev" aria-label="Prethodna slika">‹</button>
+    <figure>
+      <img id="lbImg" alt="">
+      <figcaption id="lbCap"></figcaption>
+    </figure>
+    <button class="lb-nav lb-next" data-lb="next" aria-label="Sljedeća slika">›</button>
+  </dialog>
+
+  <!-- DIZALICE TOPLINE -->
+  <section class="section section-dark" id="dizalice">
+    <div class="wrap split">
+      <div class="split-copy">
+        <p class="eyebrow eyebrow-light">Dizalice topline</p>
+        <h2>Toplina iz zraka – i do 4× više energije nego što potroši</h2>
+        <p>Dizalica topline ne proizvodi toplinu izgaranjem, nego je „prebacuje“ iz vanjskog zraka ili tla u vaš dom. Za svaki kWh struje u kuću može isporučiti 3 do 5 kWh topline. Ljeti proces ide obrnuto – i dom se hladi.</p>
+        <ul class="checks">
+          <li>Grijanje, hlađenje i topla voda iz jednog sustava</li>
+          <li>Radi i pri niskim vanjskim temperaturama</li>
+          <li>Spaja se na podno grijanje, ventilokonvektore ili radijatore</li>
+          <li>Odlično se nadopunjuje sa sunčanom elektranom</li>
+        </ul>
+        <a href="#kontakt" class="btn btn-green">Izračunajmo vaš sustav</a>
+      </div>
+
+      <figure class="flow reveal" aria-label="Shema rada dizalice topline">
+        <div class="flow-row">
+          <div class="flow-box flow-in">
+            <span class="flow-num">1 kWh</span>
+            <span class="flow-cap">električne energije</span>
+          </div>
+          <div class="flow-box flow-air">
+            <span class="flow-num">+ 3 kWh</span>
+            <span class="flow-cap">besplatne topline iz zraka</span>
+          </div>
+        </div>
+        <div class="flow-arrow" aria-hidden="true">
+          <svg viewBox="0 0 40 60"><path d="M20 2v50M8 40l12 14 12-14"/></svg>
+        </div>
+        <div class="flow-unit">
+          <svg viewBox="0 0 120 70" aria-hidden="true"><rect x="4" y="6" width="112" height="58" rx="6"/><circle cx="42" cy="35" r="20"/><path d="M42 15v40M22 35h40M28 21l28 28M56 21 28 49"/><path d="M76 22h30M76 35h30M76 48h30"/></svg>
+          <span>dizalica topline</span>
+        </div>
+        <div class="flow-arrow" aria-hidden="true">
+          <svg viewBox="0 0 40 60"><path d="M20 2v50M8 40l12 14 12-14"/></svg>
+        </div>
+        <div class="flow-box flow-out">
+          <span class="flow-num">≈ 4 kWh</span>
+          <span class="flow-cap">topline u vašem domu</span>
+        </div>
+        <figcaption>Pojednostavljeni prikaz. Stvarni faktor (COP) ovisi o uređaju, vanjskoj temperaturi i sustavu grijanja.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- PROCES -->
+  <section class="section" id="proces">
+    <div class="wrap">
+      <header class="section-head">
+        <p class="eyebrow">Kako radimo</p>
+        <h2>Od upita do tople kuće u četiri koraka</h2>
+      </header>
+      <ol class="steps">
+        <li class="step reveal">
+          <span class="step-n">01</span>
+          <h3>Upit</h3>
+          <p>Javite nam se telefonom ili obrascem – kratko opišite objekt i što želite postići.</p>
+        </li>
+        <li class="step reveal">
+          <span class="step-n">02</span>
+          <h3>Izlazak na teren</h3>
+          <p>Pregledamo prostor, izolaciju i postojeće instalacije te predložimo optimalno rješenje.</p>
+        </li>
+        <li class="step reveal">
+          <span class="step-n">03</span>
+          <h3>Ponuda</h3>
+          <p>Dobivate jasnu ponudu s opremom, radovima i rokom – bez skrivenih stavki.</p>
+        </li>
+        <li class="step reveal">
+          <span class="step-n">04</span>
+          <h3>Ugradnja i servis</h3>
+          <p>Uredna montaža, puštanje u rad, upute za korištenje i redovno održavanje.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- SUBVENCIJE -->
+  <section class="band">
+    <div class="wrap band-inner">
+      <div>
+        <h2>Razmišljate o subvenciji za dizalicu topline?</h2>
+        <p>Fond za zaštitu okoliša i energetsku učinkovitost povremeno sufinancira ugradnju dizalica topline u obiteljskim kućama. Pomoći ćemo vam s ponudom i tehničkom dokumentacijom za prijavu.</p>
+      </div>
+      <a href="#kontakt" class="btn btn-white">Javite se</a>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" id="pitanja">
+    <div class="wrap narrow">
+      <header class="section-head">
+        <p class="eyebrow">Česta pitanja</p>
+        <h2>Prije nego nas nazovete</h2>
+      </header>
+      <div class="faq">
+        <details>
+          <summary>Isplati li se dizalica topline u staroj kući s radijatorima?</summary>
+          <p>Često da, ali ovisi o izolaciji i potrebnoj temperaturi polaza. Visokotemperaturni modeli rade s radijatorima, a za najveću uštedu preporučujemo niskotemperaturno grijanje. Na terenu ćemo procijeniti što je za vaš objekt razumno.</p>
+        </details>
+        <details>
+          <summary>Koja je razlika između klima uređaja i centralne klime?</summary>
+          <p>Klasični split uređaj hladi i grije jednu prostoriju. Centralni (VRF ili kanalni) sustav jednom vanjskom jedinicom pokriva cijeli stan, kuću ili poslovni prostor, uz zasebnu regulaciju po prostorijama.</p>
+        </details>
+        <details>
+          <summary>Koliko traje ugradnja?</summary>
+          <p>Montaža split klime obično je gotova u jednom danu. Dizalica topline ili centralni sustav traju nekoliko dana, ovisno o opsegu radova na razvodu i kotlovnici.</p>
+        </details>
+        <details>
+          <summary>Koliko često treba servisirati klimu ili dizalicu topline?</summary>
+          <p>Preporučujemo servis barem jednom godišnje – najbolje prije sezone grijanja ili hlađenja. Redovno održavanje čuva učinkovitost, produljuje vijek uređaja i uvjet je za jamstvo kod većine proizvođača.</p>
+        </details>
+        <details>
+          <summary>Radite li i servis uređaja koje niste vi ugradili?</summary>
+          <p>Da – javite nam proizvođača i model uređaja pa ćemo vam reći možemo li preuzeti servis.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- KONTAKT -->
+  <section class="section section-contact" id="kontakt">
+    <div class="wrap contact">
+      <div class="contact-info">
+        <p class="eyebrow eyebrow-light">Kontakt</p>
+        <h2>Zatražite ponudu</h2>
+        <p>Pošaljite upit i javit ćemo vam se u najkraćem roku.</p>
+        <ul class="contact-list">
+          <li>
+            <span class="c-ico">📞</span>
+            <div><small>Telefon</small><a href="#" data-cfg="tel-link"><span data-cfg="tel">—</span></a></div>
+          </li>
+          <li>
+            <span class="c-ico">✉️</span>
+            <div><small>E-mail</small><a href="#" data-cfg="email-link"><span data-cfg="email">—</span></a></div>
+          </li>
+          <li>
+            <span class="c-ico">📍</span>
+            <div><small>Područje rada</small><span data-cfg="area">—</span></div>
+          </li>
+          <li>
+            <span class="c-ico">🕗</span>
+            <div><small>Radno vrijeme</small><span data-cfg="hours">—</span></div>
+          </li>
+        </ul>
+        <div class="socials">
+          <a href="#" data-cfg="instagram-link" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4zM17.3 5.5a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4zM12 2c-2.7 0-3 0-4.1.1C4.3 2.3 2.3 4.3 2.1 7.9 2 9 2 9.3 2 12s0 3 .1 4.1c.2 3.6 2.2 5.6 5.8 5.8 1.1.1 1.4.1 4.1.1s3 0 4.1-.1c3.6-.2 5.6-2.2 5.8-5.8.1-1.1.1-1.4.1-4.1s0-3-.1-4.1c-.2-3.6-2.2-5.6-5.8-5.8C15 2 14.7 2 12 2zm0 1.8c2.7 0 3 0 4 .1 2.6.1 3.9 1.4 4 4 .1 1 .1 1.3.1 4s0 3-.1 4c-.1 2.6-1.4 3.9-4 4-1 .1-1.3.1-4 .1s-3 0-4-.1c-2.6-.1-3.9-1.4-4-4-.1-1-.1-1.3-.1-4s0-3 .1-4c.1-2.6 1.4-3.9 4-4 1-.1 1.3-.1 4-.1z"/></svg>
+            <span>@ecoterm.hr</span>
+          </a>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm" novalidate>
+        <div class="field-row">
+          <label>Ime i prezime
+            <input type="text" name="ime" required autocomplete="name">
+          </label>
+          <label>Telefon
+            <input type="tel" name="telefon" required autocomplete="tel">
+          </label>
+        </div>
+        <label>Mjesto
+          <input type="text" name="mjesto" autocomplete="address-level2">
+        </label>
+        <fieldset class="chips">
+          <legend>Zanima me</legend>
+          <label><input type="checkbox" name="usluga" value="Dizalica topline"><span>Dizalica topline</span></label>
+          <label><input type="checkbox" name="usluga" value="Centralna klima"><span>Centralna klima</span></label>
+          <label><input type="checkbox" name="usluga" value="Klima uređaj"><span>Klima uređaj</span></label>
+          <label><input type="checkbox" name="usluga" value="Centralno grijanje"><span>Centralno grijanje</span></label>
+          <label><input type="checkbox" name="usluga" value="Podno grijanje"><span>Podno grijanje</span></label>
+          <label><input type="checkbox" name="usluga" value="Servis"><span>Servis</span></label>
+        </fieldset>
+        <label>Poruka
+          <textarea name="poruka" rows="4" placeholder="Npr. kuća 150 m², trenutno grijanje na plin, zanima me dizalica topline…"></textarea>
+        </label>
+        <button type="submit" class="btn btn-red btn-block">Pošalji upit</button>
+        <p class="form-note" id="formNote">Klikom se otvara vaš e-mail program s ispunjenim upitom.</p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <a href="#top" class="brand brand-footer" aria-label="ECOTERM – natrag na vrh">
+      <img src="assets/logo-mark.svg" alt="" width="52" height="47">
+      <span class="brand-stack">
+        <span class="brand-text"><span class="eco">ECO</span><span class="term">TERM</span></span>
+        <small>Instalacije za Vaš dom</small>
+      </span>
+    </a>
+    <nav class="footer-nav" aria-label="Podnožje">
+      <a href="#usluge">Usluge</a>
+      <a href="#radovi">Radovi</a>
+      <a href="#dizalice">Dizalice topline</a>
+      <a href="#proces">Kako radimo</a>
+      <a href="#pitanja">Pitanja</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+    <p class="copy">© <span id="year"></span> <span data-cfg="company">ECOTERM</span>. Sva prava pridržana.</p>
+  </div>
+</footer>
+
+<a href="#" class="call-fab" data-cfg="tel-link" aria-label="Nazovite nas">
+  <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>
+</a>
+
+<script src="js/config.js?v=3"></script>
+<script src="js/main.js?v=3"></script>
+</body>
+</html>

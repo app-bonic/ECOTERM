@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 140">
+  <g transform="translate(0 8) scale(1.1)">
+    <path d="M55 4 4 48h14v46h74V48h14L55 4Zm0 17 25 22v37H30V43l25-22Z" fill="#3aa34e"/>
+    <rect x="70" y="10" width="11" height="22" fill="#3aa34e"/>
+    <path d="M40 76c-2-20 10-34 32-36-1 22-12 35-30 36Z" fill="#3aa34e"/>
+    <path d="M42 76c6-12 14-20 24-28" stroke="#16202e" stroke-width="3" fill="none" stroke-linecap="round"/>
+  </g>
+  <text x="132" y="88" font-family="Archivo, Arial Black, Arial, sans-serif" font-size="62" font-weight="900" letter-spacing="1">
+    <tspan fill="#4f86e8">ECO</tspan><tspan fill="#ee4b4e" font-weight="500">TERM</tspan>
+  </text>
+  <text x="134" y="124" font-family="Inter, Arial, sans-serif" font-size="19" font-weight="600" fill="#c9d3e0" letter-spacing="0.5">Instalacije za Vaš dom</text>
+</svg>
