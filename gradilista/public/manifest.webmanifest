@@ -1,0 +1,13 @@
+{
+  "name": "ECOTERM Gradilišta",
+  "short_name": "Gradilišta",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#16202e",
+  "theme_color": "#16202e",
+  "lang": "hr",
+  "icons": [
+    { "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}
