@@ -81,3 +81,8 @@ public/app.css     izgled
 
 Fotografije se prije slanja smanje u pregledniku (do 1600 px, plus mala sličica), tako da slanje
 s gradilišta ne troši puno mobilnih podataka. Nove poruke stižu automatski (provjera svakih nekoliko sekundi).
+
+## Automatski test
+
+`test/e2e.js` u pravom pregledniku prođe cijeli tijek (voditelj + radnik, QR prijava, fotografije,
+status, uklanjanje uređaja). Upute za pokretanje su na vrhu te datoteke.
